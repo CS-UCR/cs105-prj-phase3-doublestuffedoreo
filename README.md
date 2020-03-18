@@ -26,11 +26,10 @@ You can run the code through Jupyter. We do have some nested folders so if an in
 
 ## PHASE 3
 
-For this phase, you are asked to perform data analysis. This can include building a model to perform prediction (like applying linear regression or kNN) or clustering. You can also use the models for data analysis, not just ‘predictions’. For example, in linear regression we saw that the resulting coefficients tell us how the features are correlated to the target variable. So, this analysis might help you identify features of importance with respect to a target feature in the dataset.
+The Crime Report dataset is all the reported crimes in Riverside from the year 2018. It contains information about the crime report as well as the crime itself (location, date, crime type, etc). The Yelp restaurant dataset is all the restaurants in Riverside. It contains ratings, price, location, and more. We plan to use the datasets to compile information and find correlations between different areas in Riverside, the Riverside restaurants, and the number of crime reports issued per zone (North, West, East, Central).
 
-For analysis, identify two hypotheses (or questions) you are curious about regarding your data and then proceed to use ML techniques to try to answer these questions. If you decide to build models for predictions or classification, be sure to setup your problem so that you have a training, validation and testing dataset and you evaluate at least two ML / Data Mining techniques and compare their results.
+Specifically, we are looking to see if the quality of the restaurants (as weighted by its price and ratings) affect the crime rate of a certain zone. We are also looking to see if restaurants tend to congregate around a certain zone and if that congregation somewhat due to the amount of crime in that zone.
 
-PHASE 3 README must:
-identifies and describes the dataset and problem at a high-level
+We found the rate of crimes by finding each unique date of crime per crime zone and dividing dividing that number under the total number of crimes in that zone. From this we compared it with the amount of restaurants in a zone. We concluded that restaurants tend to congregate around zones with less crime.
 
-Summary of the data analysis process performed for Phase 3 and the results / observations obtained; Contain information about how to run your code (include any dependencies, etc.).
+To answer our first question, we took the average rating and price of all the restaurants per zone and compared it to the crime rate of a certain zone. We concluded that an unpopular restaurant with a high price point is less likely to have crime reports in that zone. Inversely, we can also say that a lower priced, popular restaurant is more likely to be in a crime-ridden zone. 
