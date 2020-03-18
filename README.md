@@ -32,4 +32,10 @@ Specifically, we are looking to see if the quality of the restaurants (as weight
 
 We found the rate of crimes by finding each unique date of crime per crime zone and dividing dividing that number under the total number of crimes in that zone. From this we compared it with the amount of restaurants in a zone. We concluded that restaurants tend to congregate around zones with less crime.
 
-To answer our first question, we took the average rating and price of all the restaurants per zone and compared it to the crime rate of a certain zone. We concluded that an unpopular restaurant with a high price point is less likely to have crime reports in that zone. Inversely, we can also say that a lower priced, popular restaurant is more likely to be in a crime-ridden zone. 
+To answer our first question, we took the average rating and price of all the restaurants per zone and compared it to the crime rate of a certain zone. We concluded that an unpopular restaurant with a high price point is less likely to have crime reports in that zone. Inversely, we can also say that a lower priced, popular restaurant is more likely to be in a crime-ridden zone.
+
+The Yelp dataset was further experimented on to include ML training models, given that the phase 2 information wasn't enough. We used this data in correlation with the crime report dataset, but regarding the ML models, we decided to train and test different data variables.
+
+We run training and testing models for all numerical values (price, rating, review count, zip code) and predicted what the average values would be given an input price, rating, or zip code. Our second question addressed whether a lower rated restaurant meant it was also cheap and more popular, since people tend to go for cheap food but cheap doesn't always mean it's quality.
+
+It turns out that our restaurants are condensed around the 92500's range, which is in closer proximity to the Univesity of California, Riverside. However, from our findings, we found out that a lower rating does not always mean that the restaurant is cheap, since the relationship was inversed in our models. Our models also discovered that lower-rated restaurants got higher traffic in contrast to higher-rated ones.
